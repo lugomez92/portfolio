@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Spectral", serif; /* Change font to Spectral */
 }
 
 header {
@@ -45,6 +45,14 @@ nav ul li a {
     color: #fff; /* Text color for better visibility */
     padding: 0; /* Remove padding to allow the image to cover the whole section */
     height: 100vh; /* Set the height of the section to the viewport height */
+    display: flex; /* Use flexbox to center text */
+    flex-direction: column; /* Align text vertically */
+    justify-content: center; /* Center text vertically */
+}
+
+.home-section h1,
+.home-section p {
+    font-family: "Spectral", serif; /* Change font to Spectral */
 }
 
 .about-section {

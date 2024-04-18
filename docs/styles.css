@@ -129,8 +129,9 @@ nav ul li a:hover {
 }
 
 .project img {
-    max-width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
     display: block; /* Ensure images are displayed as block elements */
 }
 

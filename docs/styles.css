@@ -37,6 +37,11 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s; /* Add transition effect for smoother color change */
+}
+
+nav ul li a:hover {
+    color: #999; /* Change text color on hover to a darker color */
 }
 
 

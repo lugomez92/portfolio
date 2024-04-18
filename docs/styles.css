@@ -104,7 +104,7 @@ nav ul li a:hover {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px; /* Increase max-width */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -116,6 +116,7 @@ nav ul li a:hover {
 .about-text p {
     margin-top: 20px; /* Add margin to separate from the title */
 }
+
 
 
 

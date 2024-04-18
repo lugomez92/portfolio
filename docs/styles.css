@@ -40,10 +40,12 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center; /* To center text vertically and horizontally */
+    text-align: center; /* Center text vertically and horizontally */
     color: #fff; /* Text color for better visibility */
-    padding: 100px 0; /* Adjust padding as needed */
+    padding: 0; /* Remove padding to allow the image to cover the whole section */
+    height: 100vh; /* Set the height of the section to the viewport height */
 }
+
 
 .about-section {
     display: flex; /* Use flexbox for layout */

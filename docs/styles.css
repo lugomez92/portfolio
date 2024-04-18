@@ -57,10 +57,6 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     text-align: center;
     padding: 200px 0;
-}
-
-
-.home-section .background-image {
     filter: grayscale(100%);
 }
 
@@ -73,7 +69,6 @@ nav ul li a:hover {
     font-weight: 100; /* Set font weight for paragraphs */
     font-size: 46px; /* Set font size for paragraphs */
 }
-
 
 /* ABOUT SECTION */
 .about-section {
@@ -111,6 +106,7 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
     margin-top: 20px; /* Add margin to separate from the text */
+    filter: grayscale(100%); /* Apply grayscale filter to all images */
 }
 
 .container {
@@ -161,6 +157,7 @@ nav ul li a:hover {
     height: 300px;
     object-fit: cover; /* Maintain aspect ratio while covering the container */
     display: block; /* Ensure images are displayed as block elements */
+    filter: grayscale(100%); /* Apply grayscale filter to all images */
 }
 
 /* CONTACT SECTION */
@@ -234,11 +231,6 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #999; /* Change text color on hover to a darker color */
-}
-
-/* Apply grayscale filter to all images and background images */
-img, .background-image {
-    filter: grayscale(100%);
 }
 
 /* Style links in the portfolio section */

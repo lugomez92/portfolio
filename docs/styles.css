@@ -62,12 +62,14 @@ nav ul li a:hover {
 
 .home-section h1 {
     font-weight: 300; /* Set font weight for h1 */
-    font-size: 36px; /* Increase font size for the home section */
+    font-size: 46px;
+    color: #fff;
 }
 
 .home-section p {
-    font-weight: 100; /* Set font weight for paragraphs */
-    font-size: 46px; /* Set font size for paragraphs */
+    font-weight: 100; /* Set font weight for paragraphs  */
+    font-size: 46px; 
+    color: #fff;
 }
 
 /* ABOUT SECTION */

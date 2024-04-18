@@ -47,7 +47,6 @@ nav ul li a {
     height: 100vh; /* Set the height of the section to the viewport height */
 }
 
-
 .about-section {
     display: flex; /* Use flexbox for layout */
 }

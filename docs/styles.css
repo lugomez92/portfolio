@@ -31,9 +31,8 @@ nav ul li a {
 
 .home-section {
     background-color: #f0f0f0;
-    /* background-color: #000; black */
     text-align: center;
-    padding: 200px 0; /* Increased padding to make the banner taller */
+    padding: 200px 0;
 }
 
 .background-image {
@@ -41,36 +40,31 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center; /* Center text vertically and horizontally */
-    color: #fff; /* Text color for better visibility */
-    padding: 0; /* Remove padding to allow the image to cover the whole section */
-    height: 100vh; /* Set the height of the section to the viewport height */
-    display: flex; /* Use flexbox to center text */
-    flex-direction: column; /* Align text vertically */
-    justify-content: center; /* Center text vertically */
-}
-
-.home-section h1,
-.home-section p {
-    font-family: "Spectral", serif; /* Change font to Spectral */
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-section {
-    display: flex; /* Use flexbox for layout */
+    display: flex;
 }
 
 .about-content {
     display: flex;
-    justify-content: space-between; /* Spread content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-text {
-    width: calc(50% - 10px); /* Set width for text block */
+    width: calc(50% - 10px);
 }
 
 .about-photo {
-    width: calc(50% - 10px); /* Set width for photo block */
+    width: calc(50% - 10px);
 }
 
 .about-text h2 {
@@ -78,7 +72,7 @@ nav ul li a {
 }
 
 .about-photo img {
-    max-width: 100%; /* Ensure photo stays within its container */
+    max-width: 100%;
     height: auto;
 }
 

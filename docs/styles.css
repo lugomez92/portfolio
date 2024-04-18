@@ -32,7 +32,7 @@ nav ul li a {
 .home-section {
     background-color: #f0f0f0;
     text-align: center;
-    padding: 100px 0;
+    padding: 200px 0; /* Increased padding to make the banner taller */
 }
 
 .background-image {
@@ -45,11 +45,31 @@ nav ul li a {
     padding: 100px 0; /* Adjust padding as needed */
 }
 
+.about-section {
+    display: flex; /* Use flexbox for layout */
+}
 
-.about-section,
-.portfolio-section,
-.contact-section {
-    padding: 50px 0;
+.about-content {
+    display: flex;
+    justify-content: space-between; /* Spread content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.about-text {
+    width: calc(50% - 10px); /* Set width for text block */
+}
+
+.about-photo {
+    width: calc(50% - 10px); /* Set width for photo block */
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-photo img {
+    max-width: 100%; /* Ensure photo stays within its container */
+    height: auto;
 }
 
 .container {
@@ -59,7 +79,12 @@ nav ul li a {
 }
 
 .about-content {
-    margin-left: 20px;
+    padding: 50px 0;
+}
+
+.portfolio-section,
+.contact-section {
+    padding: 50px 0;
 }
 
 .portfolio-gallery {
@@ -89,3 +114,4 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+

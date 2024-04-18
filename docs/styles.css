@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 .home-section {
-    background-color: #f0f0f0;
+    background-color: #000; /* black */
     text-align: center;
     padding: 200px 0; /* Increased padding to make the banner taller */
 }

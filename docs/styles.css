@@ -120,8 +120,9 @@ nav ul li a:hover {
 
 .about-text p {
     margin-top: 20px; /* Add margin to separate from the title */
-    flex-grow: 1; /* Make the paragraphs grow to fill the container */
+    font-size: 16px; /* Adjust the font size as desired */
 }
+
 
 
 /* PORTFOLIO SECTION */

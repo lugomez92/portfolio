@@ -14,29 +14,31 @@ header {
     padding: 20px 0;
 }
 
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
 nav ul {
     list-style: none;
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Spread items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin-left: 10px; /* Add some space between the links */
 }
 
 nav ul li:first-child {
-    margin-left: 20px; /* Add margin to the first child to separate it from the left edge */
-}
-
-nav ul li:last-child {
-    margin-right: 20px; /* Add margin to the last child to separate it from the right edge */
+    margin-right: auto; /* Pushes the "GO" link to the far left */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
 
 .home-section {
     background-color: #f0f0f0;

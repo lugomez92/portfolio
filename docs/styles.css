@@ -34,6 +34,10 @@ nav ul li:first-child {
     font-weight: 300; /* Set font weight for Guadalupe GO */
 }
 
+nav ul li:last-child {
+    margin-right: 10px; /* Add margin to the right of the last link */
+}
+
 nav ul li a {
     font-weight: 100; /* Set font weight for other links */
     color: #fff;
@@ -47,7 +51,10 @@ nav ul li a:hover {
 
 /* HOME SECTION */
 .home-section {
-    background-color: #f0f0f0;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 200px 0;
 }
@@ -61,6 +68,7 @@ nav ul li a:hover {
     font-weight: 100; /* Set font weight for paragraphs */
     font-size: 46px; /* Set font size for paragraphs */
 }
+
 
 /* ABOUT SECTION */
 .about-section {

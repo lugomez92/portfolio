@@ -14,11 +14,6 @@ header {
     padding: 20px 0;
 }
 
-header {
-    background-color: #333;
-    padding: 20px 0;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -110,6 +105,11 @@ nav ul li a {
 .portfolio-section,
 .contact-section {
     padding: 50px 0;
+    background-color: #f0f0f0; /* Set background color */
+}
+
+.portfolio-section h2 {
+    text-align: center; /* Center align the title */
 }
 
 .portfolio-gallery {
@@ -144,4 +144,16 @@ footer {
 /* Apply grayscale filter to all images and background images */
 img, .background-image {
     filter: grayscale(100%);
+}
+
+/* Style links in the portfolio section */
+.portfolio-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition effect for smoother color change */
+}
+
+.portfolio-links a:hover {
+    color: #ccc; /* Change text color on hover */
+    text-decoration: none; /* Remove underline on hover */
 }

@@ -99,8 +99,7 @@ nav ul li a {
 
 .portfolio-gallery img {
     max-width: 100%;
-    height: auto;
-    width: 100%; /* Ensures all images fill their container */
+    height: 150px; /* Set a fixed height for all images */
     object-fit: cover; /* Maintains aspect ratio while covering the container */
 }
 

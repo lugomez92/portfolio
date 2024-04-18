@@ -146,6 +146,11 @@ nav ul li a:hover {
 .contact-section {
     background-color: #fff; /* White background */
     color: #333; /* Dark text color */
+    padding: 50px 0; /* Add padding */
+}
+
+.contact-section h2 {
+    margin-bottom: 20px; /* Add margin bottom */
 }
 
 .contact-section form input,

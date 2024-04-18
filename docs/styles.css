@@ -14,6 +14,7 @@ header {
     padding: 20px 0;
 }
 
+/* NAV BAR */
 nav ul {
     list-style: none;
     display: flex;
@@ -44,6 +45,7 @@ nav ul li a:hover {
     color: #999; /* Change text color on hover to a darker color */
 }
 
+/* HOME SECTION */
 .home-section {
     background-color: #f0f0f0;
     text-align: center;
@@ -69,6 +71,8 @@ nav ul li a:hover {
     font-size: 36px; /* Increase font size for the home section */
 }
 
+
+/* ABOUT SECTION */
 .about-section {
     display: flex;
 }
@@ -106,6 +110,8 @@ nav ul li a:hover {
     padding: 50px 0;
 }
 
+
+/* PORTFOLIO SECTION */
 .portfolio-section,
 .contact-section {
     padding: 50px 0;
@@ -135,16 +141,43 @@ nav ul li a:hover {
     display: block; /* Ensure images are displayed as block elements */
 }
 
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+}
+
 .contact-section form input,
 .contact-section form textarea,
 .contact-section form button {
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+    font-family: 'Lato', sans-serif; /* Lato font */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; /* Spacing between elements */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
+.contact-section form textarea {
+    height: 150px; /* Set height for textarea */
+}
+
+.contact-section form button {
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.contact-section form button:hover {
+    background-color: #555; /* Darken background on hover */
+}
+
+/* FOOTER */
 footer {
     background-color: #333;
     color: #fff;

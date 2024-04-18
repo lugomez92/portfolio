@@ -119,7 +119,6 @@ nav ul li a:hover {
 
 .portfolio-gallery {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
     justify-content: center; /* Center align the items horizontally */
     gap: 20px; /* Add some space between the images */
 }

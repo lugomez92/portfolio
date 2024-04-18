@@ -118,3 +118,7 @@ footer {
     padding: 20px 0;
 }
 
+/* Apply grayscale filter to all images */
+img {
+    filter: grayscale(100%);
+}

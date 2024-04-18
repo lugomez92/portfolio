@@ -44,7 +44,6 @@ nav ul li a:hover {
     color: #999; /* Change text color on hover to a darker color */
 }
 
-
 .home-section {
     background-color: #f0f0f0;
     text-align: center;
@@ -120,14 +119,20 @@ nav ul li a:hover {
 
 .portfolio-gallery {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: center; /* Center align the items horizontally */
+    gap: 20px; /* Add some space between the images */
 }
 
-.portfolio-gallery img {
+.project {
+    flex: 0 0 calc(33.333% - 20px); /* Set each project to take up one-third of the container width, minus some margin */
+    margin: 10px; /* Add some margin around each project */
+}
+
+.project img {
     max-width: 100%;
-    height: 150px; /* Set a fixed height for all images */
-    object-fit: cover; /* Maintains aspect ratio while covering the container */
+    height: auto;
+    display: block; /* Ensure images are displayed as block elements */
 }
 
 .contact-section form input,

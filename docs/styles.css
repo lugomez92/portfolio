@@ -32,6 +32,7 @@ nav ul li {
 
 nav ul li:first-child {
     margin-right: auto; /* Pushes the "GO" link to the far left */
+    font-size: 20px; /* Adjust the font size of home link */
 }
 
 nav ul li:last-child {

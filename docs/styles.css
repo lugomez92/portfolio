@@ -16,12 +16,21 @@ header {
 
 nav ul {
     list-style: none;
-    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items horizontally */
+    align-items: center; /* Center items vertically */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
+}
+
+nav ul li:first-child {
+    margin-left: 20px; /* Add margin to the first child to separate it from the left edge */
+}
+
+nav ul li:last-child {
+    margin-right: 20px; /* Add margin to the last child to separate it from the right edge */
 }
 
 nav ul li a {

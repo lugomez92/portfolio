@@ -37,6 +37,11 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s; /* Add transition effect for smoother color change */
+}
+
+nav ul li a:hover {
+    color: #999; /* Change text color on hover to a darker color */
 }
 
 
@@ -148,12 +153,12 @@ img, .background-image {
 
 /* Style links in the portfolio section */
 .portfolio-links a {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
     transition: color 0.3s; /* Add transition effect for smoother color change */
 }
 
 .portfolio-links a:hover {
-    color: #ccc; /* Change text color on hover */
+    color: #999; /* Change text color on hover */
     text-decoration: none; /* Remove underline on hover */
 }

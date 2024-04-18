@@ -86,15 +86,20 @@ nav ul li a:hover {
 .about-text {
     width: calc(50% - 10px);
     margin-top: 20px; /* Add margin to separate from the photo */
-}
-
-.about-photo {
-    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
 }
 
 .about-text h2 {
     margin-bottom: 10px; /* Adjust margin */
-    font-size: 24px; /* Increase font size */
+    font-size: 32px; /* Increase font size for 'About Me' */
+}
+
+.about-photo {
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: flex-start; /* Align photo container to the top */
 }
 
 .about-photo img {
@@ -115,9 +120,8 @@ nav ul li a:hover {
 
 .about-text p {
     margin-top: 20px; /* Add margin to separate from the title */
+    flex-grow: 1; /* Make the paragraphs grow to fill the container */
 }
-
-
 
 
 /* PORTFOLIO SECTION */

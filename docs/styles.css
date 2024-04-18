@@ -100,6 +100,8 @@ nav ul li a {
 .portfolio-gallery img {
     max-width: 100%;
     height: auto;
+    width: 100%; /* Ensures all images fill their container */
+    object-fit: cover; /* Maintains aspect ratio while covering the container */
 }
 
 .contact-section form input,

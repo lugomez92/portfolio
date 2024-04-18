@@ -6,11 +6,13 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif; /* Use Lato font as the default font */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font as the default font */
 }
 
-header {
+header,
+footer {
     background-color: #333;
+    color: #fff;
     padding: 20px 0;
 }
 
@@ -29,13 +31,11 @@ nav ul li {
 nav ul li:first-child {
     margin-right: auto; /* Pushes the "GO" link to the far left */
     font-size: 20px; /* Adjust the font size of home link */
-}
-
-nav ul li:last-child {
-    margin-right: 10px; /* Add margin to the right of the last link */
+    font-weight: 300; /* Set font weight for Guadalupe GO */
 }
 
 nav ul li a {
+    font-weight: 100; /* Set font weight for other links */
     color: #fff;
     text-decoration: none;
     transition: color 0.3s; /* Add transition effect for smoother color change */
@@ -52,25 +52,15 @@ nav ul li a:hover {
     padding: 200px 0;
 }
 
-.background-image {
-    background-image: url('home.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: #fff;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.home-section h1,
-.home-section p {
+.home-section h1 {
+    font-weight: 300; /* Set font weight for h1 */
     font-size: 36px; /* Increase font size for the home section */
 }
 
+.home-section p {
+    font-weight: 100; /* Set font weight for paragraphs */
+    font-size: 46px; /* Set font size for paragraphs */
+}
 
 /* ABOUT SECTION */
 .about-section {
@@ -91,9 +81,11 @@ nav ul li a:hover {
     justify-content: flex-start; /* Align content at the top */
 }
 
-.about-text h2 {
-    margin-bottom: 10px; /* Adjust margin */
-    font-size: 32px; /* Increase font size for 'About Me' */
+.about-text h2,
+.portfolio-section h2,
+.contact-section h2 {
+    font-weight: 300; /* Set font weight for h2 */
+    font-size: 36px; /* Set font size for h2 */
 }
 
 .about-photo {
@@ -128,9 +120,6 @@ nav ul li a:hover {
     margin-top: 20px; /* Add margin to separate from the title */
 }
 
-
-
-
 /* PORTFOLIO SECTION */
 .portfolio-section,
 .contact-section {
@@ -139,7 +128,7 @@ nav ul li a:hover {
 }
 
 .portfolio-section h2 {
-    text-align: center; /* Center align the title */
+    text-align: left; /* Align h2 to the left */
     margin-bottom: 20px; /* Add a margin between title and images */
 }
 
@@ -161,7 +150,6 @@ nav ul li a:hover {
     display: block; /* Ensure images are displayed as block elements */
 }
 
-
 /* CONTACT SECTION */
 .contact-section {
     background-color: #fff; /* White background */
@@ -169,16 +157,12 @@ nav ul li a:hover {
     padding: 50px 0; /* Add padding */
 }
 
-.contact-section h2 {
-    margin-bottom: 20px; /* Add margin bottom */
-}
-
 .contact-section form input,
 .contact-section form textarea,
 .contact-section form button {
     background-color: #f0f0f0; /* Light gray background */
     color: #333; /* Dark gray text */
-    font-family: 'Lato', sans-serif; /* Lato font */
+    font-family: 'Roboto', sans-serif; /* Roboto font */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     padding: 10px; /* Padding */
@@ -238,8 +222,6 @@ footer ul li a {
 footer ul li a:hover {
     color: #999; /* Change text color on hover to a darker color */
 }
-
-
 
 /* Apply grayscale filter to all images and background images */
 img, .background-image {

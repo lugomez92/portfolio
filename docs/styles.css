@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    margin-right: auto; /* Pushes the "Guadalupe GO" link to the far left */
+    margin-right: auto; /* Pushes the "GO" link to the far left */
     font-size: 20px; 
     font-weight: 300; 
 }
@@ -74,9 +74,46 @@ nav ul li a:hover {
 /* ABOUT SECTION */
 .about-section {
     display: flex;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.about-text {
+    width: calc(50% - 10px);
+    margin-top: 20px; 
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+}
+
+.about-text h2,
+.portfolio-section h2,
+.contact-section h2 {
+    font-weight: 300; 
+    font-size: 36px; 
+}
+
+.about-photo {
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: flex-start; 
+}
+
+.about-photo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; 
+    filter: grayscale(100%); /* Apply grayscale filter to all images */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-content {
@@ -84,32 +121,13 @@ nav ul li a:hover {
 }
 
 .about-text {
-    width: calc(100% - 20px);
+    width: calc(50% - 10px);
     margin-top: 20px; 
-}
-
-.about-text h2 {
-    font-weight: 300;
-    font-size: 24px;
 }
 
 .about-text p {
     width: 80%; 
     margin-top: 20px;
-    font-size: 16px;
-}
-
-.about-photo {
-    width: calc(100% - 20px);
-    margin-top: 20px; 
-}
-
-.about-photo img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 20px;
-    filter: grayscale(100%);
 }
 
 /* PORTFOLIO SECTION */
@@ -126,29 +144,42 @@ nav ul li a:hover {
 
 .portfolio-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; 
+    gap: 20px; 
 }
 
 .project {
-    flex: 0 0 calc(33.333% - 20px);
+    flex: 0 0 calc(33.333% - 20px); /* each project takes up one-third of the container width, margin */
     margin: 10px;
 }
 
 .project img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+/*     display: block; /* Ensure images are displayed as block elements */
+    filter: grayscale(100%); /* Apply grayscale filter to all images */
 }
 
 /* CONTACT SECTION */
+.contact-section {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 0;
+}
+
 .contact-section form input,
 .contact-section form textarea,
 .contact-section form button {
-    width: calc(100% - 20px);
-    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: 'Roboto', sans-serif; 
+    border: none; 
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; 
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .contact-section form textarea {
@@ -156,6 +187,8 @@ nav ul li a:hover {
 }
 
 .contact-section form button {
+    background-color: #333; 
+    color: #fff; 
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -190,6 +223,7 @@ footer p {
     margin-top: 20px;
 }
 
+/* Footer Links */
 footer ul li a {
     color: #fff; 
     text-decoration: none; 
@@ -200,7 +234,7 @@ footer ul li a:hover {
     color: #999; 
 }
 
-/*links in the portfolio section */
+/* Style links in the portfolio section */
 .portfolio-links a {
     color: #ccc;
     text-decoration: none;
@@ -212,7 +246,7 @@ footer ul li a:hover {
     text-decoration: none; 
 }
 
-/* GO TO TOP BUTTON */
+/* Go to top button */
 #goTopBtn {
     display: none;
     position: fixed;
@@ -239,26 +273,4 @@ footer ul li a:hover {
     font-size: 24px;
     line-height: 50px; 
     text-align: center;
-}
-
-/* RESPONSIVE DESIGN QUERIES */
-@media screen and (max-width: 768px) {
-    /* for smaller screens */
-    .home-section {
-        padding: 50px 0;
-    }
-
-    .home-section h1 {
-        font-size: 24px;
-    }
-
-    .home-section p {
-        font-size: 18px;
-    }
-
-    .about-section .container,
-    .portfolio-section .container,
-    .contact-section .container {
-        padding: 0 10px;
-    }
 }

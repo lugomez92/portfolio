@@ -18,18 +18,20 @@ function goToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// SMOOTH SCROLLING (anchor links)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+// SMOOTH SCROLLING (anchor links and go to top)
+document.querySelectorAll('a[href^="#"], #goTopBtn').forEach(element => {
+    element.addEventListener('click', function(e) {
         e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute('href'));
-        const offsetTop = target.offsetTop;
+        let targetTop = 0;
+        if (this.getAttribute('href') !== '#') {
+            const target = document.querySelector(this.getAttribute('href'));
+            targetTop = target.offsetTop;
+        }
 
         window.scrollTo({
-            top: offsetTop,
+            top: targetTop,
             behavior: 'smooth'
         });
     });
 });
-

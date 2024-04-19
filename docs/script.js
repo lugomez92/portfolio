@@ -1,4 +1,4 @@
-//Go to top Button
+//GO TO TOP BUTTON
 let goTopBtn = document.getElementById("goTopBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -18,4 +18,18 @@ function goToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// SMOOTH SCROLLING (anchor links)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        const offsetTop = target.offsetTop;
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
 

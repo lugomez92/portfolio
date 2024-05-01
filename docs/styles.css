@@ -1,13 +1,16 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fonts */
 body {
     font-family: 'Roboto', sans-serif; /* Use Roboto font as the default font */
 }
 
+/* Header and Footer */
 header,
 footer {
     background-color: #333;
@@ -15,7 +18,7 @@ footer {
     padding: 20px 0;
 }
 
-/* NAV BAR */
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -29,8 +32,8 @@ nav ul li {
 
 nav ul li:first-child {
     margin-right: auto; /* Pushes the "GO" link to the far left */
-    font-size: 20px; 
-    font-weight: 300; 
+    font-size: 20px;
+    font-weight: 300;
 }
 
 nav ul li:last-child {
@@ -38,7 +41,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    font-weight: 100; 
+    font-weight: 100;
     color: #fff;
     text-decoration: none;
     transition: color 0.3s; /* Add transition effect */
@@ -60,31 +63,33 @@ nav ul li a:hover {
 }
 
 .home-section h1 {
-    font-weight: 300; 
+    font-weight: 300;
     font-size: 46px;
     color: #fff;
 }
 
 .home-section p {
-    font-weight: 100; 
-    font-size: 46px; 
+    font-weight: 100;
+    font-size: 46px;
     color: #fff;
 }
 
 /* ABOUT SECTION */
 .about-section {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 
 .about-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align items to the top */
+    flex-basis: 100%; /* Take up full width initially */
 }
 
 .about-text {
     width: calc(50% - 10px);
-    margin-top: 20px; 
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -93,20 +98,20 @@ nav ul li a:hover {
 .about-text h2,
 .portfolio-section h2,
 .contact-section h2 {
-    font-weight: 300; 
-    font-size: 36px; 
+    font-weight: 300;
+    font-size: 36px;
 }
 
 .about-photo {
     width: calc(50% - 10px);
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .about-photo img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px; 
+    margin-top: 20px;
     filter: grayscale(100%); /* Apply grayscale filter to all images */
 }
 
@@ -122,11 +127,11 @@ nav ul li a:hover {
 
 .about-text {
     width: calc(50% - 10px);
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .about-text p {
-    width: 80%; 
+    width: 80%;
     margin-top: 20px;
 }
 
@@ -134,18 +139,19 @@ nav ul li a:hover {
 .portfolio-section,
 .contact-section {
     padding: 50px 0;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
 }
 
 .portfolio-section h2 {
-    text-align: left; 
-    margin-bottom: 20px; 
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .portfolio-gallery {
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line on smaller screens */
 }
 
 .project {
@@ -154,10 +160,9 @@ nav ul li a:hover {
 }
 
 .project img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-/*     display: block; /* Ensure images are displayed as block elements */
     filter: grayscale(100%); /* Apply grayscale filter to all images */
 }
 
@@ -171,24 +176,24 @@ nav ul li a:hover {
 .contact-section form input,
 .contact-section form textarea,
 .contact-section form button {
-    background-color: #f0f0f0; 
-    color: #333; 
-    font-family: 'Roboto', sans-serif; 
-    border: none; 
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border: none;
     border-radius: 5px; /* Rounded corners */
-    padding: 10px; 
-    margin-bottom: 20px; 
-    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
     box-sizing: border-box;
 }
 
 .contact-section form textarea {
-    height: 150px; 
+    height: 150px;
 }
 
 .contact-section form button {
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -211,7 +216,7 @@ footer ul {
 }
 
 footer ul li {
-    display: inline; 
+    display: inline;
     margin-right: 20px;
 }
 
@@ -225,13 +230,13 @@ footer p {
 
 /* Footer Links */
 footer ul li a {
-    color: #fff; 
-    text-decoration: none; 
+    color: #fff;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
 footer ul li a:hover {
-    color: #999; 
+    color: #999;
 }
 
 /* Style links in the portfolio section */
@@ -242,8 +247,8 @@ footer ul li a:hover {
 }
 
 .portfolio-links a:hover {
-    color: #999; 
-    text-decoration: none; 
+    color: #999;
+    text-decoration: none;
 }
 
 /* Go to top button */
@@ -257,7 +262,7 @@ footer ul li a:hover {
     color: #fff;
     border: none;
     border-radius: 50%;
-    width: 50px; 
+    width: 50px;
     height: 50px;
     padding: 0;
     cursor: pointer;
@@ -271,6 +276,58 @@ footer ul li a:hover {
 .arrow-up {
     display: block;
     font-size: 24px;
-    line-height: 50px; 
+    line-height: 50px;
     text-align: center;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li:first-child {
+        margin-right: 0;
+    }
+
+    .home-section {
+        padding: 100px 0;
+    }
+
+    .home-section h1,
+    .home-section p {
+        font-size: 36px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-photo {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .portfolio-section,
+    .contact-section {
+        padding: 30px 0;
+    }
+
+    .project {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    footer ul {
+        display: none;
+    }
+}
+
